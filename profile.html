@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Jcrop css -->
+	<link rel="stylesheet" href="css/jquery.Jcrop.css" type="text/css" />
+	<!-- common css -->
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- bootstrap javascript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!-- Jcrop -->
+	<script src="scripts/jquery.Jcrop.js"></script>
+	<!-- common javascript -->
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<!-- custom javascript -->
+	<script type="text/javascript" src="scripts/profile.js"></script>
+</head>
+<body>
+	<!-- navigation bar -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#homeNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-heart"></span> 一起來晚餐吧!</a>
+			</div>
+			<div class="collapse navbar-collapse" id="homeNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> 首頁</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> 關於</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span>申請帳號</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登入</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- main container -->
+	<div class="container">
+		<div class="row">
+			<!-- left list -->
+			<div class="col-sm-4">
+				<div class="inner">
+					<!-- basic information -->
+					<ul class="list-group">
+						<h4 class="underline">帳號管理</h4>
+						<li class="list-group-item">
+							<a href="profile.html">基本資料<span class="glyphicon glyphicon-chevron-right" style="float:right"></span></a>
+						</li>
+						<li class="list-group-item">
+							<a href="profile_password.html">修改密碼<span class="glyphicon glyphicon-chevron-right" style="float:right"></span>
+							</a>
+						</li>
+						<li class="list-group-item">
+							<a href="profile_subcribe.html">訂閱通知<span class="glyphicon glyphicon-chevron-right" style="float:right"></span>
+							</a>
+						</li>
+						<li class="list-group-item">
+							<a href="profile_surprise.html">驚喜一下<span class="glyphicon glyphicon-chevron-right" style="float:right"></span>
+							</a>
+						</li>
+					</ul>
+					<!-- custom data -->
+					<ul class="list-group">
+						<h4 class="underline">我的私藏</h4>
+						<li class="list-group-item">
+							<a href="#">item0<span class="glyphicon glyphicon-chevron-right" style="float:right"></span>
+							</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#">item1<span class="glyphicon glyphicon-chevron-right" style="float:right"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- main content -->
+			<div class="col-sm-8">
+				<div class="panel panel-default">
+					<div class="panel-body inner">
+						<h4 class="panel-heading col-sm-12" style="background:white">基本資料</h4>
+						<form class="form-horizontal">
+							<!-- profileImg  -->
+							<div class="form-group">
+								<label class="control-label col-sm-2">大頭貼:</label>
+								<!-- modal trigger button -->
+								<div class="col-sm-10">
+									<div class="previewContainer" style="margin-left:0">
+										<img id="previewImg" alt="file not found" src="flower.jpg">
+									</div>
+									<button type="button" class="btn btn-info" data-toggle="modal" data-target="#profileImgModal" data-backdrop="static">更換大頭貼</button>
+								</div>
+							</div>
+
+							<!-- profileImg modal -->
+							<div id="profileImgModal" class="modal fade">
+								<div class="modal-dialog">
+									<!-- content -->
+									<div class="modal-content">
+										<!-- header -->
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Modal Header</h4>
+										</div>
+										<!-- body -->
+										<div class="modal-body">
+											<img id="profileImg" alt="file not found" src="flower.jpg">
+											<div class="previewContainer">
+												<img id="previewImg" alt="file not found" src="flower.jpg">
+											</div>
+											<input type='file' name="uploadImg" id="uploadImg"/>
+										</div>
+										<!-- footer -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- nick name -->
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="nickName">*暱稱:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="nickName" placeholder="請填寫暱稱">
+								</div>
+							</div>
+							<!-- real name -->
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="realName">*真實姓名:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="realName" placeholder="請填寫真實姓名">
+								</div>
+							</div>
+							<!-- Email -->
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="email">*Email:</label>
+								<div class="col-sm-10">
+									<input type="email" class="form-control" id="email" placeholder="Enter email">
+								</div>
+							</div>
+							<!-- sex -->
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="sex">性別:</label>
+								<div class="col-sm-10">
+									<select class="form-control" id="sex">
+										<option disabled selected>null</option>
+										<option>男</option>
+										<option>女</option>
+									</select>
+								</div>
+							</div>
+							<!-- birthday -->
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="sex">生日:</label>
+								<!-- year -->
+								<div class="col-sm-4">
+									<select class="form-control" id="year">
+										<option disabled selected>年</option>
+									</select>
+								</div>
+								<!-- month -->
+								<div class="col-sm-3">
+									<select class="form-control" id="month">
+										<option disabled selected>月</option>
+									</select>
+								</div>
+								<!-- date -->
+								<div class="col-sm-3">
+									<select class="form-control" id="date">
+										<option disabled selected>日</option>
+									</select>
+								</div>
+							</div>
+							<!-- phoneNumber -->
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="phoneNumber">電話:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" placeholder="範例 : 0912345678 or 0228761234" id="phoneNumber">
+								</div>
+							</div>
+							<!-- selfIntroduction -->
+							<div class="form-group">
+								<label class="control-label col-sm-2"for="selfIntroduction">自我介紹:</label>
+								<div class="col-sm-10">
+									<textarea class="form-control" rows="5" id="selfIntroduction"></textarea>
+								</div>
+							</div>
+							<!-- subimt button -->
+							<div class="form-group">
+								<div class="col-sm-2"></div>
+								<div class="col-sm-10">
+									<input type="submit" class="btn btn-default" value="儲存資料">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer class="container-fluid text-center">
+		<p>&copy 2015 Dating</p>
+	</footer>
+</body>
+</html>
