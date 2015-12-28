@@ -1,0 +1,43 @@
+div.editable{
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.drop-area{
+	/*margin: auto;*/
+	width:100%;
+	display: table;
+	min-height: 300px;
+	border: 10px dashed #ccc;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	text-align: center;
+	cursor: pointer;
+	/*transition*/
+	webkit-transition:background 0.5s, border-color 0.5s;
+	transition:background 0.5s, border-color 0.5s;	
+}
+.drop-area:hover{
+	background: lightgray;
+	border-color: gray;
+}
+.drop-area p{
+	display: table-cell;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+
+img.inserted{
+	cursor: pointer;
+	animation-name:border-shining;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	/*animation-direction: alternate;*/
+}
+@keyframes border-shining{
+	0%{border-color: lightgray}
+	50%{border-color: gray}
+	100%{border-color: lightgray}
+
+}

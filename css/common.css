@@ -1,0 +1,86 @@
+/*navbar*/
+.navbar{
+	font-family: NotoSansDemilight,"Microsoft JhengHe","微軟正黑體", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.navbar-header .navbar-brand{
+	font-weight: bold;
+	color: #000000;
+}
+.glyphicon-heart{
+	color: red;
+	top: 4px;
+}
+/*body*/
+body{
+	font-family: NotoSansDemilight,"Microsoft JhengHe","微軟正黑體", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: rgba(155,145,128,0.22);
+	word-break:break-all;
+}
+/*footer*/
+footer {
+	background-color: #555;
+	color: white;
+	padding: 15px;
+	margin-top: 20px;
+}
+/*inner in column*/
+.inner{
+	/*background: #E0E0E0;*/
+	border : 10px solid transparent;
+}
+/*text*/
+.text-bold{
+	font-weight: bold;
+}
+.text-large{
+	font-size: 28px;
+}
+@media screen and (max-width: 768px){
+	.text-large{
+		font-size: 20px;
+	}	
+}
+.text-super-large{
+	font-size: 63px;
+}
+@media screen and (max-width: 768px){
+	.text-super-large{
+		font-size: 36px;
+	}
+}
+/*line*/
+.underline{
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+.underline-lightgray{
+	padding-bottom: 10px;
+	border-bottom: 1px solid lightgray;
+}
+/*link*/
+a.cancel-decoration{
+	/*color: black;*/
+}
+a.cancel-decoration:hover{
+	text-decoration: none;
+}
+a.cancel-decoration:visited{
+	text-decoration: none;
+}
+a.cancel-decoration:active{
+	text-decoration: none;
+}
+a.cancel-decoration:link{
+	text-decoration: none;
+}
+/*display*/
+.hidden{
+	display: none;
+}
+/*position*/
+.pull_left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}

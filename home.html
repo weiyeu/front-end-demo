@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- common css -->
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- bootstrap javascript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- custom javascript -->
+  <script type="text/javascript" src="scripts/home.js"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#homeNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-heart"></span> 一起來晚餐吧!</a>
+      </div>
+      <div class="collapse navbar-collapse" id="homeNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> 首頁</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> 關於</a></li>
+          <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span>申請帳號</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登入</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- main contain -->
+  <div class="container">
+    <div class="background-image">
+    </div>
+    <div class="jumbotron" >
+      <h1 class="text-center text-bold">距離配對時間 <span id="clock"></span></h1>
+    </div>
+    <div class="jumbotron" >
+      <h1 class="text-center text-bold">要不要一起吃晚餐<span class="glyphicon glyphicon-heart"></span></h1>
+    </div>
+    <a href="apply_for_date.html" class="btn btn-danger btn-block text-super-large text-bold">我想參加</a>
+    <a href="forum.html" class="btn btn-warning btn-block text-super-large text-bold">經驗分享</a>
+    <a href="#" class="btn btn-primary btn-block text-super-large text-bold">關於一切</a>
+  </div>
+  <!-- footer -->
+  <footer class="container-fluid text-center">
+    <p>&copy 2015 Dating</p>
+  </footer>
+</body>
+</html>
